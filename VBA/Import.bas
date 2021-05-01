@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Sub import()
 'The main objective of this sub is importing another xlsx into this workbook
 Application.ScreenUpdating = False
@@ -29,6 +29,7 @@ Columns("A:G").Select
 Columns("A:G").EntireColumn.AutoFit
 
 Application.ScreenUpdating = True
+Application.DisplayAlerts = True
 
 MsgBox "Importado em " & Now()
 
